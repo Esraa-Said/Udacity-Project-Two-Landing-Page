@@ -131,7 +131,6 @@ nav {
   width: 90%;
 }
 
-
 /* categories section */
 #categories,
 #products {
@@ -273,14 +272,14 @@ nav {
 }
 
 /* Customers Section */
-#Customers {
+#customers {
   display: grid;
   grid-template-rows: auto auto;
   grid-template-columns: 200px 1fr 200px;
-  padding: 40px 0;
+  margin: 100px 0 100px 0;
 }
 
-#Customers-head {
+#customers-head {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
   text-align: center;
@@ -288,7 +287,7 @@ nav {
   margin-bottom: 20px;
 }
 
-#Customers-body {
+#customers-body {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
   display: flex;
@@ -303,7 +302,7 @@ nav {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   padding: 20px;
-  flex: 1 1 calc(33.33% - 1rem);
+  flex: 1 1 calc(25% - 1rem);
 
   display: flex;
   flex-direction: column;
@@ -459,7 +458,9 @@ footer {
     flex: 1 1 calc(100% - 1rem);
   }
   #customers {
-    margin: 0 20px 0 20px;
+    grid-template-columns: 20px 1fr 20px ;
+    
+
   }
   .review {
     flex: 1 1 calc(100% - 1rem);
@@ -518,5 +519,10 @@ footer {
   #main-section {
     grid-template-columns: 10px 1fr 1fr 10px;
     grid-template-rows: 100px auto 100px;
+  }
+  #customers {
+    grid-template-columns: 20px 1fr 20px ;
+    
+
   }
 }

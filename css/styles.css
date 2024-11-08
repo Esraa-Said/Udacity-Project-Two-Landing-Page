@@ -37,7 +37,10 @@ nav {
   height: 30px;
   margin-right: 8px;
 }
-
+.active-section{
+  background-color: rgb(243, 243, 243);
+  transition: background-color 0.3s ease;
+}
 #list {
   flex-grow: 1;
   display: flex;
@@ -201,6 +204,7 @@ nav {
     /* Top-left shadow */ -5px 5px 10px #eee,
     /* Bottom-left shadow */ 5px -5px 10px #eee; /* Top-right shadow */
   position: relative;
+  background-color: #fff;
 }
 .discount-badge {
   position: absolute;
@@ -248,7 +252,7 @@ nav {
 }
 
 #about {
-  margin: 100px;
+  padding: 100px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -274,7 +278,7 @@ nav {
 /* Customers Section */
 #customers {
   display: grid;
-  grid-template-rows: auto auto;
+  grid-template-rows: auto auto 50px;
   grid-template-columns: 200px 1fr 200px;
   margin: 100px 0 100px 0;
 }

@@ -32,14 +32,14 @@ navItems.forEach((item) => {
   // Create <li> element
   const li = document.createElement("li");
 
-  // Create <a> element and set the text
-  const link = document.createElement("a");
-  link.textContent = item.name;
-  link.href = `#${item.id}`;
+  // Set the innerHTML with an <a> element
+  li.innerHTML = `<a href="#${item.id}">${item.name}</a>`;
 
-  // Append <a> to <li> and <li> to <ul>
-  li.appendChild(link);
+  // Append <li> to <ul>
   navbar.appendChild(li);
+
+  // Select the <a> element inside <li>
+  const link = li.querySelector("a");
 
   // Add event listener for click event on each link
   link.addEventListener("click", (e) => {
@@ -57,6 +57,7 @@ navItems.forEach((item) => {
   });
 });
 
+
 // Function to determine the currently visible section and update the active class
 function setActiveSection() {
   let currentActive = null;
@@ -68,6 +69,9 @@ function setActiveSection() {
       // Check if the section is in the viewport
       if (rect.top <= 150 && rect.bottom >= 150) {
         currentActive = item.id;
+        section.classList.add('active-section');
+      } else{
+        section.classList.remove('active-section');
       }
     }
   });

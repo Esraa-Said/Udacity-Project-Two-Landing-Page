@@ -8,7 +8,7 @@ menuBtn.addEventListener('click', () => {
 });
 
 // Scroll smooth + تفعيل active link
-const links = document.querySelectorAll('.nav-links a');
+const links = document.querySelectorAll('.nav-links li a');
 
 links.forEach(link => {
   link.addEventListener('click', e => {

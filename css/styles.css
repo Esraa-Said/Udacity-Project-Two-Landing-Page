@@ -297,6 +297,9 @@ body {
   margin-top: 60px;
   font-size: 0.9rem;
 }
+.show {
+    display: flex;
+  }
 
 /* ==== RESPONSIVE ==== */
 @media (max-width: 992px) {
@@ -314,9 +317,6 @@ body {
     z-index: 100;
   }
 
-  .nav-links.show {
-    display: flex;
-  }
 
   #menu-btn {
     display: block;
